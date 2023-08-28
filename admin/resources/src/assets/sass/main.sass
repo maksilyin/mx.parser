@@ -1,0 +1,76 @@
+h2
+  margin-top: 0
+.app
+  background-color: white
+  padding: 15px
+.tabs
+  display: flex
+  border-bottom: 1px solid #d9d9d9
+  span
+    display: block
+    cursor: pointer
+    padding: 10px 15px
+    border: 1px solid #d9d9d9
+    margin-bottom: -1px
+    &.active
+      font-weight: bold
+.tab_content
+  padding-top: 20px
+.form
+  &__input
+    label
+      display: block
+      margin-bottom: 10px
+      font-weight: 600
+    input
+      width: 100%
+      padding: 10px 10px
+      box-sizing: border-box
+      border: 1px solid #d9d9d9
+      outline: none
+      background-color: white
+  &__row
+    display: flex
+    flex-wrap: wrap
+    gap: 16px
+  &__col
+    &-1
+      width: 100%
+    &-2
+      width: calc(100% / 2 - 8px)
+  &__bottom
+    padding-top: 20px
+    display: flex
+    gap: 15px
+    justify-content: flex-end
+.btn
+  padding: 10px 15px
+  border: 0
+  cursor: pointer
+  transition: all .3s
+  &__green
+    background-color: #6daf41
+    color: white
+    &:hover
+      background-color: #598d36
+  &__blue
+    background-color: #1074A9
+    color: white
+    &:hover
+      background-color: #0d6691
+  &__red
+    background-color: #AB0000
+    color: white
+    &:hover
+      background-color: #8c0000
+  &[disabled]
+    opacity: 0.5
+    cursor: default
+.parser-panel
+  padding: 10px
+  display: flex
+  background-color: #f5f9f9
+  border: 1px solid
+  border-color: #c4ced2 #dce7ed #dce7ed
+  align-items: center
+  gap: 15px
